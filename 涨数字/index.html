@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index,follow">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>CountUp.js</title>
+    <script type="text/javascript" src="countUp.js"></script>
+</head>
+<body>
+    <div style="font-size:100px; font-family: arial;color:#0664b4;" id="myTargetElement"></div>
+</body>
+</html>
+<script type="text/javascript"> 
+
+        
+        var options = {
+          useEasing : true, //使用缓和效果
+          useGrouping : true, //使用分组效果
+          separator : '', //分离器，数据够三位，例如100,000
+          decimal : '.', //小数点分割，例如：10.00
+          prefix : '', //第一位默认数字
+          suffix : '' //最后一位默认数字
+        };
+        var demo = new CountUp("myTargetElement", 0, 100, 2, 2, options);
+        demo.start();
+
+        // var demo = new CountUp(target, startVal, endVal, decimals, duration, options);
+        // target = 目标元素的 ID；
+        // startVal = 开始值；
+        // endVal = 结束值；
+        // decimals = 小数位数，默认值是0；
+        // duration = 动画延迟秒数，默认值是2；
+</script>
